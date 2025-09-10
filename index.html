@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh Blog - Page 04</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'raleway': ['Verdana', 'sans-serif'],
+                    },
+                    colors: {
+                        'cream': '#FDF6E3',
+                        'brown-custom': '#8B4513',
+                        'brown-light': '#A0522D',
+                        'quote-bg': '#F0E4C4',
+                        'green-custom': '#7cb342',
+                    },
+                    spacing: {
+                        '116': '116vh',
+                        '15': '3.75rem',
+                        '68': '17rem',
+                        '69': '17.25rem',
+                        '80': '20rem',
+                    },
+                    backgroundImage: {
+                        'palace': "url('img/top.png')",
+                        'fort': "url('img/fort.png')",
+                        'dest-1': "url('img/Rectangle 4290.png')",
+                        'dest-2': "url('img/Rectangle 4288.png')",
+                        'dest-3': "url('img/Rectangle 4287.png')",
+                        'dest-4': "url('img/Rectangle 4289.png')",
+                        'dest-5': "url('img/Group 3565 (1).png')",
+                        'bottom-img': "url('img/imae 3.png')",
+                        'video-1': "url('img/3.png')",
+                        'video-2': "url('img/1.png')",
+                        'video-3': "url('img/2.png')",
+                        'video-4': "url('img/4.png')",
+                        'gradient-overlay': 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))',
+                        'gradient-brown': 'linear-gradient(135deg, rgba(212, 149, 106, 0.2) 100%, rgba(184, 120, 74, 0.6) 100%, rgba(168, 106, 58, 0.8) 100%)',
+                        'gradient-main': 'linear-gradient(#f9edcc8e 50%, #d6ccb1 100%)',
+                    },
+                    fontSize: {
+                        '9xl': '8rem',
+                        '10xl': '10rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-raleway bg-cream text-gray-800">
+    <!-- Hero Section -->
+    <div class="relative w-full overflow-hidden h-screen min-h-screen">
+
+        <!-- Background Image - Using Tailwind classes -->
+        <div class="absolute inset-0 w-full h-116 -top-24 z-0 bg-palace bg-cover bg-center bg-no-repeat"></div>
+        <!-- Main Title -->
+        <h1
+            class="absolute top-72 md:top-80 lg:top-96 left-12 lg:left-15 text-white text-xl md:text-2xl lg:text-5xl font-semibold z-20 max-w-[60%] pr-8 leading-relaxed tracking-wide">
+            A Drop of Divine | Rishikesh | Shikha Tripathi
+        </h1>
+
+        <!-- Desktop Video Cards with Vertical Loop Scroll -->
+        <div class="absolute right-10 top-1/2 transform -translate-y-1/2 hidden lg:block">
+
+
+            <!-- Scrollable Container -->
+            <div id="videoContainer" class="h-[620px] overflow-hidden mb-4">
+                <div id="videoScroll" class="flex flex-col gap-5 transition-transform duration-500 ease-in-out">
+                    <!-- Video Card 1 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-1 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                            Finding your bliss | Rishikesh | Mariellen Ward
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-2 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                            In reverence to the river Ganges - Jai Gange! | Rishikesh | Anuradha Goyal
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-3 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                            A river run for that shot of adrenaline | Rishikesh | Delhi Fundos
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Mobile Video Cards -->
+        <div class="lg:hidden absolute bottom-5 left-0 right-0 px-5">
+            <div
+                class="flex gap-5 overflow-x-auto pb-2 scrollbar-thin scrollbar-track-white/10 scrollbar-thumb-white/30">
+                <!-- Mobile Video Card 1 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-1 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-orange-300/60 to-orange-400/80 -z-10">
+                    </div>
+                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">03</div>
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        Finding your bliss | Rishikesh | Mariellen Ward
+                    </div>
+                </div>
+
+                <!-- Mobile Video Card 2 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-2 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+
+                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">01</div>
+
+                    <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                        In reverence to the river Ganges - Jai Gange! | Rishikesh | Anuradha Goyal
+                    </div>
+                </div>
+
+                <!-- Mobile Video Card 3 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-3 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-orange-300/60 to-orange-400/80 -z-10">
+                    </div>
+                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">02</div>
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        A Drop of Divine | Rishikesh | Shikha Tripathi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Destinations Section -->
+    <section class="bg-gradient-to-b from-cream to-cream py-20 px-10 relative">
+        <div
+            class="destinations-container max-w-7xl mx-auto relative px-8 lg:px-12 xl:px-16 pb- transition-all duration-300">
+            <h2
+                class="text-center text-3xl lg:text-3xl font-semibold text-brown-custom my-5 mb-10 leading-tight font-serif">
+                EXPLORE DESTINATIONS
+            </h2>
+
+            <!-- Single responsive container -->
+            <div class="mb-10">
+                <!-- Mobile: Horizontal scroll, Desktop: Flex wrap -->
+                <div class="overflow-x-auto lg:overflow-x-visible pb-4">
+                    <div class="flex gap-5 min-w-max lg:min-w-0 px-4 lg:px-0 lg:justify-center lg:flex-wrap">
+                        <!-- Destination Card 1 - Goa -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-1 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    GOA
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 2 - Udaipur -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-2 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    UDAIPUR
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 3 - Jaipur -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-3 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    JAIPUR
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 4 - Rishikesh -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink -translate-y-4 scale-110 shadow-2xl shadow-blue-500/25 brightness-110 mb-4 group">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-xl bg-dest-1 bg-cover bg-center">
+                                <div class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-20">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20 scale-110"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.3);">
+                                    RISHIKESH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Indicators -->
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        01
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        02
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+
+                        03
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot active w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0">
+                        04
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section with Sidebar -->
+    <div class="bg-gradient-to-b from-[#f9edcc8e] to-[#d6ccb1] px-2 md:px-5 pb-12 pt-2">
+        <div class="max-w-7xl mx-auto flex gap-6">
+            <!-- Main Content -->
+            <section class="flex-1 bg-white p-5 md:p-8 rounded-lg mb-6 shadow-lg">
+                <h2 class="text-center text-[22px] md:text-[28px] font-semibold text-[#8B4513] mb-2 font-serif">
+                    Ride the Himalayan whitewater on the Ganges for an unforgettable adventure in Rishikesh
+                </h2>
+                <h4
+                    class="text-center text-xs text-black mt-2 mb-6 pt-3 border-t border-gray-200 font-sans font-normal">
+                    👤 Delhi Fundos 🕐 4 min
+                </h4>
+                <!-- Fort Image -->
+                <div class="w-full h-[300px] md:h-[450px] rounded-lg bg-cover bg-center my-6 shadow-lg"
+                    style="background-image: url('img/fort.png');"></div>
+
+                <!-- Text content with floating image -->
+                <div class="text-[14px] leading-relaxed text-justify">
+                    <!-- Floating Image -->
+                    <div class="w-full max-w-[300px] h-[280px] md:h-[350px] rounded-lg bg-cover bg-center shadow-lg mb-4 float-right ml-6 relative"
+                        style="background-image: url('img/image\ 134.png');">
+
+                    </div>
+
+                    <p class="mb-4">
+                        For the seeker of spirituality, Rishikesh has always held a charismatic pull. For an adventurer
+                        and explorer like me, the town offers a different magnetism, but in equal measure. Somewhere,
+                        the two meet, and birth the enigma that is Rishikesh.
+                    </p>
+                    <p class="mb-4">
+                        My earliest memories of this holy town are from its most famous landmark, Laxman Jhula, where I
+                        was mobbed by monkeys while walking down its length as a child. I hurriedly threw the packet of
+                        peanuts I was clutching at them, and ran shrieking. As an adult, revisiting the bridge that
+                        connects both pedestrians and motorbike passengers across the eastern and western banks, brings
+                        back memories and a smile to my face. The monkey menace has only grown, but so have tourists,
+                        and locals who use the bridge to get across. Nevertheless, its importance is unwavering.
+                        According to Indian mythology, Lord Laxman is believed to have crossed the river at this spot on
+                        a bridge made of jute ropes. I would say the comparatively less crowded but longer bridge, the
+                        Ram Jhula close by, is a far safer bet. </p>
+
+
+
+                    <p class="mb-4">
+                        No trip to Rishikesh is complete without participating or witnessing an aarti on the river
+                        ghats, especially the Triveni ghat. Whether you are religiously inclined or not, Triveni ghat in
+                        Rishikesh showcases the most beautiful ceremony of the Ganga aarti every evening. Be it the
+                        earthen lamps floating down the river in hundreds, or butter lamps being waved around in sync
+                        with devotional singing and dancing, the ceremony is a spectacle attended not only by devout
+                        Hindus, but also travellers and locals alike. For a special spiritual experience, attend the
+                        ceremony at Parmarth Ashram, and for a more secluded experience away from the crowds go to
+                        Shatrughan ghat. </p>
+
+                    <p class="mb-4">
+                        It was only on my third trip to Rishikesh that I finally visited the iconic Beatles Ashram, a
+                        place that I should have visited much earlier. Founded in the early sixties, the Chaurasi Kutia
+                        ashram shot to fame when the Beatles visited Maharishi Mahesh Yogi there, soon after which it
+                        earned its famous nickname courtesy the British band. The sprawling ashram spans nearly 15 acres
+                        across which several dilapidating studios and buildings are scattered, some of which carry
+                        signboards indicating the use of that particular space. The campus shares a boundary with the
+                        teak forests of Rajaji national park and is full of remnants of the erstwhile structures,
+                        including Maharishi Yogi’s residence and an old printing press among others, that had unusual
+                        architecture for its times. Make sure you stop to check out the exhibition gallery which
+                        showcases rare photographs of the Beatles’ visit, and some other images from the ashram
+                        archives. This is right next to the canteen, ideal for a coffee break or that much needed snack
+                        after all the walking.
+                    </p>
+                    <div class="text-center my-8 py-5">
+                        <img src="img/Add_banner (5).png" alt="Advertisement"
+                            class="max-w-full h-auto w-full lg:w-30 lg:h-22 rounded mx-auto">
+                    </div>
+
+                    <p class="mb-4">
+                        Equally popular is a joint by the same name, the Beatles Café that is covered in wall art
+                        dedicated to the band, and overlooking the Ganges. It’s tucked away in the Tapovan area that is
+                        away from the clamour of the main town. Tapovan appeals to backpackers with its flurry of budget
+                        guesthouses, eateries and souvenir stores. Whether you stay here or not, it’s ideal for a
+                        walkabout, especially if you want to explore the slower paced side of Rishikesh. Browse through
+                        its roadside stalls for charming trinkets, hangout at its many neat cafes, or check out the
+                        organic stores here that sell everything from handmade soaps to gluten-free cookies, a lot of
+                        which are locally made and make for great gifts.
+                    </p>
+
+                    <p class="mb-4">
+                        If you’ve had enough of being sedentary, there is enough adrenaline packed action here on offer,
+                        from bungee jumping to zip lining. The biggest high of all though is white water rafting for
+                        which Rishikesh holds the title of the unofficial country capital. The stretch of the river
+                        Ganga that runs from the Shivpuri village all the way down till just before the main town area
+                        and the ghats is the playground for rafting and kayaking. Safety is of prime importance, so make
+                        sure you go with a certified service provider. With rapids of all grades, it is ideal for
+                        beginners and for extreme sport fans alike. Combined with its spiritual aura, the many facets of
+                        Rishikesh have been my reason to return to it time and again.
+                    </p>
+
+                    
+
+
+                    <!-- Clear float -->
+                    <div class="clear-both"></div>
+                </div>
+            </section>
+
+            <!-- Right Sidebar - Hidden on mobile -->
+            <aside class="hidden lg:block w-80 h-fit sticky top-4">
+                <!-- Ad Banner -->
+                <div class="bg-white rounded-lg overflow-hidden mb-6 shadow-lg">
+                    <img src="img/ad banner.png" alt="Your Spain Escape - QuoteYourRate Ad Banner"
+                        class="w-full h-auto object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200">
+                </div>
+
+
+                <!-- Cities List -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <h3 class="text-lg font-semibold text-gray-800 p-4 border-b border-gray-200">More Cities to Explore
+                    </h3>
+                    <div class="max-h-96 overflow-y-auto custom-scrollbar">
+                        <ul class="divide-y divide-gray-100">
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">Traveller’s Tale | Jaipur | Gustasp and Jeroo
+                                    Irani </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">A tête-à-tête with Jaipur’s royalty and what they
+                                    love about their city | Jaipur | Dharmendar Kanwar </span>
+                            </li>
+
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">A Heritage walk through Chhattis Karkhanas | Jaipur
+                                    | Dharmendar Kanwar </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">Indigo, The Blue Gold of India | Jaipur | Dharmendar
+                                    Kanwar </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Goa’s unique Tripurari Poornima celebrations | Goa |
+                                    Manjulika Pramod </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Reinventing the WAY, we travel | Goa | Shikha
+                                    Tripathi </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">The Best places for sundowners | Goa | Pallavi
+                                    Pasricha </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm"> Goin’ Goan Chef by Chef | Goa | Bunny
+                                    Suraiya </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">A cruise into the sunset | Goa | Anuradha
+                                    Goyal </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">Finding your bliss | Rishikesh | Mariellen Ward 
+                                     </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">In reverence to the river Ganges - Jai
+                                    Gange! | Rishikesh | Anuradha Goyal </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">A river run for that shot of adrenaline | Rishikesh
+                                    | Delhi Fundos </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm"> A Drop of Divine | Rishikesh | Rishikesh | Shikha
+                                    Tripathi </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">An oasis of serenity | Rishikesh | Shikha Tripathi
+                                </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">An 18th century hidden gem | Udaipur | Delhi
+                                    Fundos </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">Mewar on a platter | Udaipur | Manjulika
+                                    Pramod </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm"> Romancing the lake city | Udaipur | Chitra
+                                    Narayanan </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
