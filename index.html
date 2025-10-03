@@ -8,15 +8,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        'raleway': ['Verdana', 'sans-serif'],
-                    },
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                    ,
                     colors: {
                         'cream': '#FDF6E3',
                         'brown-custom': '#8B4513',
@@ -60,7 +62,8 @@
 
 </head>
 
-<body class="font-raleway bg-cream text-gray-800">
+<body class="font-poppins bg-cream text-gray-800">
+
     <!-- Hero Section -->
     <div class="relative w-full overflow-hidden h-screen min-h-screen">
 
@@ -119,10 +122,7 @@
                 <!-- Mobile Video Card 1 -->
                 <div
                     class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-1 bg-cover bg-center bg-blend-overlay flex-shrink-0">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-orange-300/60 to-orange-400/80 -z-10">
-                    </div>
-                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">03</div>
+
 
                     <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
                         Finding your bliss | Rishikesh | Mariellen Ward
@@ -133,7 +133,6 @@
                 <div
                     class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-2 bg-cover bg-center bg-blend-overlay flex-shrink-0">
 
-                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">01</div>
 
                     <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
                         In reverence to the river Ganges - Jai Gange! | Rishikesh | Anuradha Goyal
@@ -143,10 +142,7 @@
                 <!-- Mobile Video Card 3 -->
                 <div
                     class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-3 bg-cover bg-center bg-blend-overlay flex-shrink-0">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-orange-300/60 to-orange-400/80 -z-10">
-                    </div>
-                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">02</div>
+
 
                     <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
                         A Drop of Divine | Rishikesh | Shikha Tripathi
@@ -161,7 +157,7 @@
         <div
             class="destinations-container max-w-7xl mx-auto relative px-8 lg:px-12 xl:px-16 pb- transition-all duration-300">
             <h2
-                class="text-center text-3xl lg:text-3xl font-semibold text-brown-custom my-5 mb-10 leading-tight font-serif">
+                class="text-center text-3xl lg:text-3xl font-semibold text-brown-custom my-5 mb-10 leading-tight font-Poppins">
                 EXPLORE DESTINATIONS
             </h2>
 
@@ -202,7 +198,7 @@
 
                         <!-- Destination Card 3 - Jaipur -->
                         <div
-                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink-translate-y-2 sm:-translate-y-4 scale-105 sm:scale-110 shadow-2xl shadow-blue-500/25 brightness-110 mb-4 group">
                             <div
                                 class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-3 bg-cover bg-center">
                                 <div
@@ -217,13 +213,14 @@
 
                         <!-- Destination Card 4 - Rishikesh -->
                         <div
-                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink -translate-y-4 scale-110 shadow-2xl shadow-blue-500/25 brightness-110 mb-4 group">
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
                             <div
-                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-xl bg-dest-1 bg-cover bg-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-20">
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-4 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
                                 </div>
-                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20 scale-110"
-                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.3);">
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
                                     RISHIKESH
                                 </div>
                             </div>
@@ -231,32 +228,46 @@
                     </div>
                 </div>
 
-                <!-- Navigation Indicators -->
-                <div class="flex justify-center items-center gap-4 mt-8">
-                    <div
-                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
-                        01
-                    </div>
-                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+                <!-- Navigation Indicators - Mobile Responsive -->
+                <div class="flex justify-center items-center mt-8 px-4">
+                    <!-- Mobile-first responsive container -->
+                    <div class="flex items-center justify-center gap-1 xs:gap-2 sm:gap-3 md:gap-4 max-w-full">
 
-                    <div
-                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
-                        02
-                    </div>
-                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+                        <!-- Navigation Dot 1 -->
+                        <div
+                            class="nav-dot w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg active:scale-95 flex-shrink-0">
+                            01
+                        </div>
 
-                    <div
-                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        <!-- Connector Line 1 -->
+                        <div class="w-3 xs:w-4 sm:w-6 md:w-8 lg:w-15 h-0.5 bg-green-custom/60 flex-shrink-0"></div>
 
-                        03
-                    </div>
-                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+                        <!-- Navigation Dot 2 -->
+                        <div
+                            class="nav-dot w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg active:scale-95 flex-shrink-0">
+                            02
+                        </div>
 
-                    <div
-                        class="nav-dot active w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0">
-                        04
+                        <!-- Connector Line 2 -->
+                        <div class="w-3 xs:w-4 sm:w-6 md:w-8 lg:w-15 h-0.5 bg-green-custom/60 flex-shrink-0"></div>
+
+                        <!-- Navigation Dot 3 - Active -->
+                        <div
+                            class="nav-dot active w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0 flex-shrink-0">
+                            03
+                        </div>
+
+                        <!-- Connector Line 3 -->
+                        <div class="w-3 xs:w-4 sm:w-6 md:w-8 lg:w-15 h-0.5 bg-green-custom/60 flex-shrink-0"></div>
+
+                        <!-- Navigation Dot 4 -->
+                        <div
+                            class="nav-dot w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg active:scale-95 flex-shrink-0">
+                            04
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -266,30 +277,31 @@
         <div class="max-w-7xl mx-auto flex gap-6">
             <!-- Main Content -->
             <section class="flex-1 bg-white p-5 md:p-8 rounded-lg mb-6 shadow-lg">
-                <h2 class="text-center text-[22px] md:text-[28px] font-semibold text-[#8B4513] mb-2 font-serif">
+                <h2 class="text-center text-[22px] md:text-[28px] font-semibold text-[#8B4513] mb-2 font-Poppins">
                     Ride the Himalayan whitewater on the Ganges for an unforgettable adventure in Rishikesh
                 </h2>
                 <h4
-                    class="text-center text-xs text-black mt-2 mb-6 pt-3 border-t border-gray-200 font-sans font-normal">
+                    class="text-center text-xs text-black mt-2 mb-6 pt-3 border-t border-gray-200 font-Poppins font-normal">
                     👤 Delhi Fundos 🕐 4 min
                 </h4>
                 <!-- Fort Image -->
                 <div class="w-full h-[300px] md:h-[450px] rounded-lg bg-cover bg-center my-6 shadow-lg"
                     style="background-image: url('img/fort.png');"></div>
 
+
+                <p class="mb-4">
+                    For the seeker of spirituality, Rishikesh has always held a charismatic pull. For an adventurer
+                    and explorer like me, the town offers a different magnetism, but in equal measure. Somewhere,
+                    the two meet, and birth the enigma that is Rishikesh.
+                </p>
                 <!-- Text content with floating image -->
-                <div class="text-[14px] leading-relaxed text-justify">
+                <div class="text-[16px] leading-relaxed text-justify">
                     <!-- Floating Image -->
                     <div class="w-full max-w-[300px] h-[280px] md:h-[350px] rounded-lg bg-cover bg-center shadow-lg mb-4 float-right ml-6 relative"
                         style="background-image: url('img/image\ 134.png');">
 
                     </div>
 
-                    <p class="mb-4">
-                        For the seeker of spirituality, Rishikesh has always held a charismatic pull. For an adventurer
-                        and explorer like me, the town offers a different magnetism, but in equal measure. Somewhere,
-                        the two meet, and birth the enigma that is Rishikesh.
-                    </p>
                     <p class="mb-4">
                         My earliest memories of this holy town are from its most famous landmark, Laxman Jhula, where I
                         was mobbed by monkeys while walking down its length as a child. I hurriedly threw the packet of
@@ -354,7 +366,7 @@
                         Rishikesh have been my reason to return to it time and again.
                     </p>
 
-                    
+
 
 
                     <!-- Clear float -->
@@ -379,108 +391,105 @@
                         <ul class="divide-y divide-gray-100">
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
-                                <span class="text-gray-700 text-sm">Traveller’s Tale | Jaipur | Gustasp and Jeroo
-                                    Irani </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">Traveller's Tale | Jaipur | Gustasp and Jeroo
+                                    Irani</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
-                                <span class="text-gray-700 text-sm">A tête-à-tête with Jaipur’s royalty and what they
-                                    love about their city | Jaipur | Dharmendar Kanwar </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">A tête-à-tête with Jaipur's royalty and what they
+                                    love about their city | Jaipur | Dharmendar Kanwar</span>
                             </li>
-
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A Heritage walk through Chhattis Karkhanas | Jaipur
-                                    | Dharmendar Kanwar </span>
+                                    | Dharmendar Kanwar</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Indigo, The Blue Gold of India | Jaipur | Dharmendar
-                                    Kanwar </span>
+                                    Kanwar</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
-                                <span class="text-gray-700 text-sm">Goa’s unique Tripurari Poornima celebrations | Goa |
-                                    Manjulika Pramod </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">Goa's unique Tripurari Poornima celebrations | Goa |
+                                    Manjulika Pramod</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
-                                <span class="text-gray-700 text-sm">Reinventing the WAY, we travel | Goa | Shikha
-                                    Tripathi </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">Reinventing the WAY, we travel | Goa | Shikha
+                                    Tripathi</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">The Best places for sundowners | Goa | Pallavi
-                                    Pasricha </span>
+                                    Pasricha</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
-                                <span class="text-gray-700 text-sm"> Goin’ Goan Chef by Chef | Goa | Bunny
-                                    Suraiya </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">Goin' Goan Chef by Chef | Goa | Bunny Suraiya</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A cruise into the sunset | Goa | Anuradha
-                                    Goyal </span>
+                                    Goyal</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
-                                <span class="text-gray-700 text-sm">Finding your bliss | Rishikesh | Mariellen Ward 
-                                     </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">Finding your bliss | Rishikesh | Mariellen
+                                    Ward</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
-                                <span class="text-gray-700 text-sm">In reverence to the river Ganges - Jai
-                                    Gange! | Rishikesh | Anuradha Goyal </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">In reverence to the river Ganges - Jai Gange! |
+                                    Rishikesh | Anuradha Goyal</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A river run for that shot of adrenaline | Rishikesh
-                                    | Delhi Fundos </span>
+                                    | Delhi Fundos</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
-                                <span class="text-gray-700 text-sm"> A Drop of Divine | Rishikesh | Rishikesh | Shikha
-                                    Tripathi </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">A Drop of Divine | Rishikesh | Shikha
+                                    Tripathi</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
-                                <span class="text-gray-700 text-sm">An oasis of serenity | Rishikesh | Shikha Tripathi
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">An oasis of serenity | Udaipur | Shikha Tripathi
                                 </span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
-                                <span class="text-gray-700 text-sm">An 18th century hidden gem | Udaipur | Delhi
-                                    Fundos </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">An 18th century hidden gem | Udaipur | Delhi
+                                    Fundos</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Mewar on a platter | Udaipur | Manjulika
-                                    Pramod </span>
+                                    Pramod</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
-                                <span class="text-gray-700 text-sm"> Romancing the lake city | Udaipur | Chitra
-                                    Narayanan </span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">Romancing the lake city | Udaipur | Chitra
+                                    Narayanan</span>
                             </li>
-
                         </ul>
                     </div>
                 </div>
